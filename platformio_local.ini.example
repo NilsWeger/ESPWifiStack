@@ -6,11 +6,14 @@
 [env:node1]
 upload_port = COM5
 monitor_port = COM5
+test_port = COM5
 
 [env:node2]
 upload_port = COM7
 monitor_port = COM7
+test_port = COM7
 
 ; [env:node3]
 ; upload_port = COM8
 ; monitor_port = COM8
+; test_port = COM8
