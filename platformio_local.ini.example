@@ -1,0 +1,16 @@
+; Copy this file to platformio_local.ini (git-ignored) and set the serial
+; port of each board. Find the ports with: pio device list
+;   Windows: COM5, COM7, ...   Linux: /dev/ttyUSB0   macOS: /dev/cu.usbserial-110
+; Sections here are merged into the envs of the same name in platformio.ini.
+
+[env:node1]
+upload_port = COM5
+monitor_port = COM5
+
+[env:node2]
+upload_port = COM7
+monitor_port = COM7
+
+; [env:node3]
+; upload_port = COM8
+; monitor_port = COM8

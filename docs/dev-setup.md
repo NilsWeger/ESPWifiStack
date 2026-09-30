@@ -81,7 +81,7 @@ If the project later moves to the ESP32 (ESP-NOW v2, more RAM), consider pioardu
 ### Working with several boards
 
 - `pio device list` shows all ports.
-- Put a sticker with the node number on each board, and set `upload_port` / `monitor_port` per env in `platformio.ini`.
+- Put a sticker with the node number on each board, and set `upload_port` / `monitor_port` per env in `platformio_local.ini` (copy it from `platformio_local.ini.example`; it is git-ignored, so each PC keeps its own ports).
 - **Linux:** stable names through udev rules (e.g. `/dev/esp-node1` by serial number), plus `sudo usermod -aG dialout $USER`.
 - **Windows:** fix the COM port per board in Device Manager. You need the CH340 or CP210x driver.
 - **macOS:** the ports are `/dev/cu.usbserial-*` or `/dev/cu.wchusbserial*`.

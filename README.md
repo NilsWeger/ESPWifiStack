@@ -13,12 +13,16 @@ without a router, and measures packet loss and round-trip time per link.
 pip install platformio pyserial
 
 pio device list                                      # find the ports
-pio run -e node1 -t upload --upload-port /dev/ttyUSB0
-pio run -e node2 -t upload --upload-port /dev/ttyUSB1
-pio run -e node3 -t upload --upload-port /dev/ttyUSB2
+cp platformio_local.ini.example platformio_local.ini # then set one port per node
 
-python tools/multi_monitor.py --csv run.csv          # watch all nodes
+pio run -e node1 -t upload
+pio run -e node2 -t upload
+
+python tools/multi_monitor.py -p COM5=node1 -p COM7=node2 --csv run.csv
 ```
+
+`platformio_local.ini` is git-ignored, so every PC keeps its own ports.
+Without it, pass the port per call: `pio run -e node1 -t upload --upload-port COM5`.
 
 Expected output: every node prints `# PEER node=…` for the others, then one
 `STAT` line per peer every 5 s:
