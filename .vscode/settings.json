@@ -1,0 +1,26 @@
+{
+  "editor.formatOnSave": true,
+  "editor.rulers": [100],
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.associations": {
+    "*.ino": "cpp",
+    "*.h": "cpp"
+  },
+  "C_Cpp.formatting": "clangFormat",
+  "C_Cpp.clang_format_style": "file",
+  "files.exclude": {
+    "**/.pio": true
+  },
+  "search.exclude": {
+    "**/.pio": true
+  },
+  "files.watcherExclude": {
+    "**/.pio/**": true
+  },
+  "platformio-ide.autoRebuildAutocompleteIndex": false,
+  "platformio-ide.activateOnlyOnPlatformIOProject": true,
+  "[python]": {
+    "editor.rulers": [110]
+  }
+}

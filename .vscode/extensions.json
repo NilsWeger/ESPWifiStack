@@ -1,0 +1,13 @@
+{
+  "recommendations": [
+    "platformio.platformio-ide",
+    "ms-vscode.cpptools",
+    "editorconfig.editorconfig",
+    "eamodio.gitlens",
+    "ms-python.python",
+    "anthropic.claude-code"
+  ],
+  "unwantedRecommendations": [
+    "ms-vscode.cpptools-extension-pack"
+  ]
+}

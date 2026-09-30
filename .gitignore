@@ -1,0 +1,9 @@
+.pio/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+__pycache__/
+*.pyc
+.venv/
+*.csv
+.DS_Store
