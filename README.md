@@ -40,6 +40,7 @@ Test parameters (channel, ping interval, payload size) are build flags in
 
 ```bash
 pio test -e native        # protocol unit tests on the host (needs g++; on Windows e.g. WinLibs/MinGW)
+                          # (not `pio run -e native`: the firmware does not build on the host)
 pio test -e node1         # same tests on a board, no host compiler needed
 ./tools/host_test.sh      # same tests without PlatformIO (g++ + Unity)
 ```
